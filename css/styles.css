@@ -244,8 +244,8 @@ address {
   display: flex;
   justify-content: space-between;
   width: 206px;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
+  fill: var(--color-icon);
 }
 .icons-list li:not(:last-child) {
   margin-right: 10px;
@@ -256,19 +256,16 @@ address {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: var(--color-icon);
+  align-items: center; 
 }
 .icon{
   width: 20px;
   height: 20px;
-  fill: white;
 }
-
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
-  color: white;
+  fill: var(--color-w);
 }
 
 /*footer*/
