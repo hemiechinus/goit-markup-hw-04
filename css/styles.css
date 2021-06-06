@@ -8,11 +8,11 @@
 }
 
 .body {
-  width: 1600px;
   font-family: "Roboto", "Raleway";
   font-style: normal;
   color: var(--color);
   background-color: var(--color-w);
+  max-width: 1600px;
 }
 
 address {
@@ -21,11 +21,14 @@ address {
 .container {
   width: 1200px;
   padding: 0px 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .port {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0 0 0/25%);
+}
+.header .container {
+  display: flex;
+  align-items: center;
 }
 .navlist {
   display: flex;
@@ -86,22 +89,27 @@ address {
   color: var(--color-text);
 }
 /*main*/
+
 .section {
   padding: 94px 0;
 }
+
 /*section banner*/
 .banner {
   background-color: var(--color-banner);
   color: var(--color-w);
+  padding: 200px 0px;
 }
+
 .banner-text {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  padding: 0 252px;
   text-align: center;
+  max-width: 696px;
+  margin: 0 auto;
 }
 .button {
   cursor: pointer;
@@ -112,16 +120,18 @@ address {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  margin: 30px 500px 0;
+  margin: 0 auto;
+  margin-top: 30px;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  display: block;
+  text-align: center;
 }
 /* buttons portfolio*/
 .portfolio-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .filter {
   background-color: var(--portfolo-button);
@@ -130,6 +140,7 @@ address {
 .filter:not(:first-child) {
   margin-left: 8px;
 }
+
 .buttons {
   cursor: pointer;
   background-color: var(--portfolo-button);
@@ -139,11 +150,14 @@ address {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  border: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 .buttons:hover,
 .buttons:focus {
-  background-color: var(--color-link);
+  background: var(--color-link);
   color: var(--color-w);
 }
 /*portfolio*/
@@ -178,8 +192,9 @@ address {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
+
 .title-img {
   display: flex;
 }
@@ -207,25 +222,23 @@ address {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.people-name {
+.desc {
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   text-align: center;
+  line-height: 1.19;
+}
+.people-name {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 .people-text {
   color: var(--color-text);
   font-size: 16px;
-  line-height: 1.19;
   margin-bottom: 30px;
-  text-align: center;
 }
-.team-people p {
-  font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 30px;
-  text-align: center;
-}
+
 /*footer*/
 .footer {
   background-color: var(--color-banner);
@@ -234,22 +247,21 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   padding-top: 60px;
-}
-.adress {
-  padding-top: 20px;
   padding-bottom: 60px;
 }
+
 .adress p {
-  padding-bottom: 9px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
-.adress-contacts li {
-  padding-bottom: 9px;
+.adress-contacts li:not(:last-child) {
+  margin-bottom: 9px;
 }
 .lin {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/*portfolio main*/ 
+/*portfolio main*/
 .examples {
   display: flex;
   flex-wrap: wrap;
@@ -260,11 +272,14 @@ address {
 .examples-item {
   /*це наш item*/
   margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: cacl((1200- 90px)/ 3);
+  margin-top: 30px; /*
+  flex-basis: cacl((1200- 90px)/3); */
+}
+.examples-item img {
+  display: block;
 }
 .discription {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 .examples > li {
   width: 370px;
