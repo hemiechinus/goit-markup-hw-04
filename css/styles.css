@@ -89,6 +89,7 @@ address {
 .links {
   color: var(--color-text);
 }
+
 /*main*/
 
 .section {
@@ -177,7 +178,6 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-
 .title-text {
   font-size: 14px;
   line-height: 1.71;
