@@ -38,13 +38,38 @@ address {
 .social-links {
   display: flex;
   margin-left: 93px;
+  color: var(--color-text);
 }
+
 .social-links .item:not(:last-child) {
   margin-right: 50px;
 }
 .contacts-link {
   display: flex;
   margin-left: auto;
+}
+.contacts-link .mail::before{
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-color: lawngreen;
+  /*background: url('../images/sprite.svg#icon-envelope');*/
+}
+.contacts-link .mail::before{
+  background-image: url('');
+}
+.contacts-link .phone::before{
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  /*background: url('../images/sprite.svg#icon-smartphone');*/
+}
+.contacts-link .phone::before{
+  background-image: url('../images/sprite.svg#icon-smartphone');
 }
 .contacts-link .item:not(:first-child) {
   margin-left: 50px;
@@ -289,7 +314,9 @@ address {
 .lin {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.footer .title{
+  margin-left: 301px;
+}
 /*portfolio main*/
 .examples {
   display: flex;
