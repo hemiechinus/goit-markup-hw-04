@@ -48,15 +48,17 @@ address {
   display: flex;
   margin-left: auto;
 }
+/*
 .contacts-link .mail::before{
   content: '';
-  display: inline-block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-color: lawngreen;
-  /*background: url('../images/sprite.svg#icon-envelope');*/
-}
+  display: inline-block;
+  
+  background: url('../images/sprite.svg#icon-envelope');
+} */
+
 .contacts-link .mail::before{
   background-image: url('');
 }
