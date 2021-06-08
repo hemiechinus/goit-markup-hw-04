@@ -48,30 +48,13 @@ address {
   display: flex;
   margin-left: auto;
 }
-/*
-.contacts-link .mail::before{
-  content: '';
-  width: 16px;
-  height: 12px;
+.contacts-link .mail{
   margin-right: 10px;
-  display: inline-block;
-  
-  background: url('../images/sprite.svg#icon-envelope');
-} */
-
-.contacts-link .mail::before{
-  background-image: url('');
-}
-.contacts-link .phone::before{
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 16px;
+  fill: var(--color-text);
+} 
+.contacts-link .phone{
   margin-right: 10px;
-  /*background: url('../images/sprite.svg#icon-smartphone');*/
-}
-.contacts-link .phone::before{
-  background-image: url('../images/sprite.svg#icon-smartphone');
+  fill: var(--color-text);
 }
 .contacts-link .item:not(:first-child) {
   margin-left: 50px;
@@ -101,14 +84,16 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.links {
-  color: var(--color-text);
-}
-/*меню навігації*/
 
+/*меню навігації*/
+.mail:hover,
+.mail:focus,
+.phone:hover,
+.phone:focus,
 .link:hover,
 .link:focus {
   color: var(--color-link);
+  fill: var(--color-link);
 }
 .link:active {
   color: red;
@@ -125,7 +110,8 @@ address {
 
 /*section banner*/
 .banner {
-  background-color: var(--color-banner);
+  background: var(--color-banner);
+  background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)),url('/images/main-img.svg') ;
   color: var(--color-w);
   padding: 200px 0px;
 }
@@ -271,7 +257,7 @@ address {
   display: flex;
   justify-content: space-between;
   width: 206px;
-  margin: 0 auto; 
+  margin: 0 auto;
   fill: var(--color-icon);
 }
 .icons-list li:not(:last-child) {
@@ -294,7 +280,32 @@ address {
   background: var(--color-link);
   fill: var(--color-w);
 }
+/*client section*/
+.client-list{
+  display: flex;
+  justify-content: space-between;
+  fill: var(--color-icon);
+}
+.client{
+  max-width: 170px; 
+  border: 1px solid var(--color-icon);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.client:not(:last-child){
+  margin-right: 30px;
+}
+.client-icon{
+  border: 0px solid;
+  padding: auto;
+}
+.client:hover,
+.client:focus {
+  fill: var(--color-link);
+}
 
+/*client section*/
 /*footer*/
 .footer {
   background-color: var(--color-banner);
