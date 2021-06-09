@@ -180,6 +180,13 @@ address {
 .section-why {
   display: flex;
 }
+.why-icon{
+  display: block;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
 .why:not(:last-child) {
   margin-right: 30px;
 }
@@ -284,6 +291,9 @@ address {
 .client-list{
   display: flex;
   justify-content: space-between;
+
+}
+.clients .client{
   fill: var(--color-icon);
 }
 .client{
