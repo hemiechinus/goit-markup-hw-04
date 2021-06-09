@@ -111,11 +111,13 @@ address {
 /*section banner*/
 .banner {
   background: var(--color-banner);
-  background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)),url('/images/main-img.svg') ;
+  max-width: 1600px;
   color: var(--color-w);
   padding: 200px 0px;
 }
-
+.banner-background{
+  background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)),url('/images/main-img.svg') ;
+}
 .banner-text {
   text-transform: uppercase;
   font-weight: 900;
@@ -184,7 +186,7 @@ address {
   display: block;
   padding: 25px 100px;
   margin-bottom: 30px;
-  background: #F5F4FA;
+  background: var(--portfolo-button);
   border-radius: 4px;
 }
 .why:not(:last-child) {
@@ -278,10 +280,7 @@ address {
   justify-content: center;
   align-items: center; 
 }
-.icon{
-  width: 20px;
-  height: 20px;
-}
+
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
@@ -326,7 +325,10 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer .container-adress::after{
+  display: flex;
+  align-items: flex-start;
+}
 .adress p {
   margin-top: 20px;
   margin-bottom: 9px;
@@ -337,9 +339,7 @@ address {
 .lin {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer .title{
-  margin-left: 301px;
-}
+
 /*portfolio main*/
 .examples {
   display: flex;
