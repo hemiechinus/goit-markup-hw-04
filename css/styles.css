@@ -112,12 +112,12 @@ address {
 .banner {
   background: var(--color-banner);
   max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)),url('/images/main-img.svg');
   color: var(--color-w);
   padding: 200px 0px;
 }
-.banner-background{
-  background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)),url('/images/main-img.svg') ;
-}
+  
+
 .banner-text {
   text-transform: uppercase;
   font-weight: 900;
