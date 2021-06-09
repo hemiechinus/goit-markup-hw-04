@@ -112,11 +112,7 @@ address {
 .banner {
   background: var(--color-banner);
   max-width: 1600px;
-<<<<<<< HEAD
   background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url('../images/main-img.svg');
-=======
-  background-image: linear-gradient(to right, rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url('/images/main-img.svg');
->>>>>>> 5ccf81e2430df7277c07b2a9d281df8e9d0b9aba
   color: var(--color-w);
   padding: 200px 0px;
 }
