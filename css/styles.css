@@ -137,6 +137,11 @@ address {
   display: block;
   text-align: center;
 }
+.button:hover,
+.button:focus{
+  color:var(--color-w);
+  background-color: rgba(24, 140, 232, 1);
+}
 /* buttons portfolio*/
 .portfolio-buttons {
   display: flex;
