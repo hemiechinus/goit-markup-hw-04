@@ -298,12 +298,10 @@ address {
 .client:not(:last-child){
   margin-right: 30px;
 }
-.client-icon{
-  border: 0px solid;
-  padding: auto;
-}
+
 .client:hover,
 .client:focus {
+  border-color: var(--color-link);
   fill: var(--color-link);
 }
 
