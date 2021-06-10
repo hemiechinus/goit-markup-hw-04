@@ -280,7 +280,6 @@ address {
   justify-content: center;
   align-items: center; 
 }
-
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
@@ -290,7 +289,6 @@ address {
 .client-list{
   display: flex;
   justify-content: space-between;
-
 }
 .clients .client{
   fill: var(--color-icon);
@@ -305,13 +303,11 @@ address {
 .client:not(:last-child){
   margin-right: 30px;
 }
-
 .client:hover,
 .client:focus {
   border-color: var(--color-link);
   fill: var(--color-link);
 }
-
 /*client section*/
 /*footer*/
 .footer {
@@ -326,7 +322,6 @@ address {
 .footer .container{
   display: flex;
 }
-
 .adress p {
   margin-top: 20px;
   margin-bottom: 9px;
@@ -343,6 +338,10 @@ address {
 }
 .connect .title{
   margin-bottom: 20px;
+}
+.connect .first-list{
+  background:  rgba(255, 255, 255, 0.1);
+  fill: var(--color-w);
 }
 /*portfolio main*/
 .examples {
