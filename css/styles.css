@@ -343,6 +343,11 @@ address {
   background:  rgba(255, 255, 255, 0.1);
   fill: var(--color-w);
 }
+.connect .first-list:hover,
+.connect .first-list:focus {
+  background: var(--color-link);
+  fill: var(--color-w);
+}
 /*portfolio main*/
 .examples {
   display: flex;
