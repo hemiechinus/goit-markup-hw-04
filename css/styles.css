@@ -275,7 +275,7 @@ address {
 .icons-list li:not(:last-child) {
   margin-right: 10px;
 }
-.icons-list a{
+.icons-list li{
   width: 44px;
   height: 44px;   
   border-radius: 50%;
@@ -283,7 +283,6 @@ address {
   justify-content: center;
   align-items: center; 
 }
-
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
