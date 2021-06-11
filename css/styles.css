@@ -275,7 +275,7 @@ address {
 .icons-list li:not(:last-child) {
   margin-right: 10px;
 }
-.icons-list li{
+.icons-list a{
   width: 44px;
   height: 44px;   
   border-radius: 50%;
@@ -283,6 +283,7 @@ address {
   justify-content: center;
   align-items: center; 
 }
+
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
@@ -365,10 +366,13 @@ address {
   margin-top: 30px; /*
   flex-basis: cacl((1200- 90px)/3); */
 }
-.examples-item:hover,
-.examples-item:focus {
+.examples-item:hover {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.examples-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .examples-item img {
   display: block;
