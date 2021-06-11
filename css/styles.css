@@ -184,8 +184,10 @@ address {
   display: flex;
 }
 .why-icon{
-  display: block;
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   margin-bottom: 30px;
   background: var(--portfolo-button);
   border-radius: 4px;
@@ -284,7 +286,7 @@ address {
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
-  fill: var(--color-w);
+  fill: var(--color-w); 
 }
 /*client section*/
 .client-list{
@@ -373,10 +375,14 @@ address {
 }
 .discription {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
+
 .examples > li {
   width: 370px;
-  border: 1px solid #eeeeee;
+  
 }
 .title-examples {
   font-weight: bold;
